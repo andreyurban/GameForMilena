@@ -135,7 +135,7 @@ function loadQuestion() {
     if (wrongAnswers >= 3) {
         alert("טעית 3 פעמים! כדאי ללמוד את החומר שוב.");
         resetProgress();
-        window.location.href = "start.html";
+        window.location.href = "index.html";
         return;
     }
 
