@@ -171,11 +171,11 @@ function loadQuestion() {
 function checkAnswer(selected, correct) {
     if (selected === correct) {
         correctAnswers++;
-        resultText.textContent = "!נכון";
+        resultText.textContent = "נכון!";
         resultText.style.color = "green";
     } else {
         wrongAnswers++;
-        resultText.textContent = "!לא נכון";
+        resultText.textContent = "לא נכון!";
         resultText.style.color = "red";
     }
     saveProgress();
