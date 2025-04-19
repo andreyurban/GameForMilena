@@ -140,37 +140,38 @@ ul {
     padding-right: 25px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     body {
-        font-size: 14px;
+      font-size: 12px;
     }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    #question {
-        font-size: 20px;
-    }
-
-    .option {
-        font-size: 16px;
-        padding: 10px 20px;
-        margin: 6px;
-    }
-
-    #restart-btn {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-
-    #correct-counter,
-    #wrong-counter {
-        font-size: 16px;
-    }
-
+  
     .container {
-        padding: 10px;
-        margin: 10px;
+      padding: 10px;
+      margin: 5px;
+      transform: scale(0.9);       /* 👈 уменьшает масштаб */
+      transform-origin: top center;
     }
-}
+  
+    h1 {
+      font-size: 22px;
+    }
+  
+    #question {
+      font-size: 18px;
+    }
+  
+    .option {
+      font-size: 14px;
+      padding: 10px;
+      height: 45px;
+    }
+  
+    #restart-btn {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  
+    #game-info span {
+      font-size: 14px;
+    }
+  }
