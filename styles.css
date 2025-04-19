@@ -1,3 +1,4 @@
+/* Базовые стили */
 body {
     font-family: "Comic Sans MS", cursive, sans-serif;
     background-color: #e0f7fa;
@@ -7,6 +8,15 @@ body {
     direction: rtl;
 }
 
+/* Масштабирование на ПК */
+@media (min-width: 601px) {
+    .container {
+        transform: scale(0.75); /* 👈 уменьшаем всё на ПК */
+        transform-origin: top center;
+    }
+}
+
+/* Главный контейнер */
 .container {
     margin: 20px auto;
     max-width: 900px;
@@ -17,24 +27,28 @@ body {
     text-align: center;
 }
 
+/* Заголовки */
 h1 {
     color: #00796b;
     font-size: 40px;
     margin-bottom: 20px;
 }
 
+/* Обычные параграфы */
 .container p {
     font-size: 22px;
     line-height: 1.6;
     margin-bottom: 30px;
 }
 
+/* Вопрос */
 #question {
     font-size: 26px;
     font-weight: bold;
     margin-top: 20px;
 }
 
+/* Кнопки с вариантами ответов */
 .option {
     padding: 15px 25px;
     margin: 10px;
@@ -45,7 +59,7 @@ h1 {
     border: none;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.2s;
-    min-width: 200px;
+    min-width: 180px;
     max-width: 90%;
     white-space: nowrap;
     overflow: hidden;
@@ -59,6 +73,7 @@ h1 {
     transform: scale(1.05);
 }
 
+/* Ответ — правильно или неправильно */
 #result {
     height: 25px;
     margin-top: 20px;
@@ -69,6 +84,7 @@ h1 {
     align-items: center;
 }
 
+/* Кнопка и ссылка */
 .about-link, .start-button {
     display: inline-block;
     padding: 15px 30px;
@@ -85,6 +101,7 @@ h1 {
     background-color: #1976d2;
 }
 
+/* Статистика */
 #game-info {
     margin-top: 20px;
     display: flex;
@@ -107,6 +124,7 @@ h1 {
     color: #388e3c;
 }
 
+/* Кнопка перезапуска */
 #restart-btn {
     margin-top: 15px;
     padding: 10px 25px;
@@ -123,6 +141,7 @@ h1 {
     background-color: #d84315;
 }
 
+/* Картинка */
 img {
     max-width: 100%;
     height: auto;
@@ -132,6 +151,7 @@ img {
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
+/* Списки в about.html */
 ul {
     text-align: right;
     font-size: 20px;
@@ -140,38 +160,39 @@ ul {
     padding-right: 25px;
 }
 
-@media (max-width: 480px) {
+/* 📱 Адаптивность для телефонов */
+@media (max-width: 600px) {
     body {
-      font-size: 12px;
+        font-size: 14px;
     }
-  
-    .container {
-      padding: 10px;
-      margin: 5px;
-      transform: scale(0.9);       /* 👈 уменьшает масштаб */
-      transform-origin: top center;
-    }
-  
+
     h1 {
-      font-size: 22px;
+        font-size: 28px;
     }
-  
+
     #question {
-      font-size: 18px;
+        font-size: 20px;
     }
-  
+
     .option {
-      font-size: 14px;
-      padding: 10px;
-      height: 45px;
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 6px;
+        height: 45px;
     }
-  
+
     #restart-btn {
-      font-size: 14px;
-      padding: 10px 20px;
+        font-size: 16px;
+        padding: 10px 20px;
     }
-  
-    #game-info span {
-      font-size: 14px;
+
+    #correct-counter,
+    #wrong-counter {
+        font-size: 16px;
     }
-  }
+
+    .container {
+        padding: 10px;
+        margin: 10px;
+    }
+}
