@@ -60,10 +60,13 @@ h1 {
 
 /* Ответ — правильно или неправильно */
 #result {
-    min-height: 28px; /* Чтобы не прыгало */
+    height: 25px; /* ← фиксируем высоту блока */
     margin-top: 20px;
     font-size: 22px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Кнопка и ссылка */
