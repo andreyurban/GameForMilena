@@ -142,11 +142,11 @@ const questions = [
   function checkAnswer(selected, correct) {
     if (selected === correct) {
       correctCount++;
-      resultText.textContent = "!נכון";
+      resultText.textContent = "נכון";
       resultText.style.color = "green";
     } else {
       wrongCount++;
-      resultText.textContent = "!לא נכון";
+      resultText.textContent = "לא נכון";
       resultText.style.color = "red";
     }
     setTimeout(loadQuestion, 1000);
