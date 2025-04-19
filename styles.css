@@ -10,13 +10,16 @@ body {
 
 /* Главный контейнер */
 .container {
-    margin: 20px auto;
+    margin: 0 auto;
     max-width: 900px;
-    padding: 20px;
+    padding: 10px;
     background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
     text-align: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
 /* Заголовки */
@@ -158,36 +161,49 @@ ul {
         font-size: 14px;
     }
 
-    .container {
-        padding: 10px;
-        margin: 0 auto;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
     h1 {
-        font-size: 28px;
+        font-size: 24px;
+        margin: 10px 0;
     }
 
-    #question {
-        font-size: 20px;
+    img {
+        max-height: 160px;
+        margin-top: 10px;
     }
 
     .option {
+        font-size: 14px;
+        padding: 10px;
+        height: 40px;
+        margin: 5px;
+        min-width: 160px;
+    }
+
+    #question {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    #result {
+        font-size: 18px;
+        height: 20px;
+        margin-top: 10px;
+    }
+
+    #game-info {
+        flex-direction: column;
+        gap: 5px;
         font-size: 16px;
-        padding: 10px 20px;
-        margin: 6px;
     }
 
     #restart-btn {
         font-size: 16px;
         padding: 10px 20px;
+        margin: 10px 0;
     }
 
-    #correct-counter,
-    #wrong-counter {
+    .about-link, .start-button {
         font-size: 16px;
+        padding: 10px 20px;
     }
 }
