@@ -50,8 +50,15 @@ h1 {
     color: white;
     border: none;
     border-radius: 8px;
-    transition: background-color 0.3s;
-}
+    transition: background-color 0.3s, transform 0.2s;
+    min-width: 200px;          /* 👈 фиксируем ширину */
+    max-width: 90%;            /* 👈 адаптивно ограничиваем */
+    white-space: nowrap;       /* 👈 не переносим строки */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 50px;              /* 👈 фиксированная высота */
+    box-sizing: border-box;
+  }
 
 .option:hover {
     background-color: #00897b;
