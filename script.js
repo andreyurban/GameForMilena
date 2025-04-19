@@ -111,7 +111,7 @@ const questions = [
     }
   
     if (wrongCount >= 3) {
-      alert("!טעית 3 פעמים כדאי ללמוד שוב.");
+      alert("!טעית 3 פעמים כדאי ללמוד שוב");
       restartBtn.click();
       return;
     }
