@@ -1,149 +1,158 @@
-/* Reset + базовые стили */
-* {
-    box-sizing: border-box;
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: #e0f7fa;
+    color: #333;
     margin: 0;
     padding: 0;
-  }
-  
-  body {
-    font-family: 'Segoe UI', 'Comic Sans MS', sans-serif;
-    background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2);
-    color: #333;
     direction: rtl;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 900px;
     padding: 20px;
-  }
-  
-  .container {
     background-color: #ffffff;
-    width: 100%;
-    max-width: 960px;
-    padding: 30px 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
     text-align: center;
-  }
-  
-  h1 {
-    font-size: 42px;
+}
+
+h1 {
     color: #00796b;
+    font-size: 40px;
     margin-bottom: 20px;
-  }
-  
-  .container p {
+}
+
+.container p {
     font-size: 22px;
-    margin-bottom: 15px;
     line-height: 1.6;
-  }
-  
-  .about-link, .start-button {
-    display: inline-block;
-    padding: 14px 28px;
-    font-size: 20px;
-    background-color: #42a5f5;
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 10px;
-    margin: 10px 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .about-link:hover, .start-button:hover {
-    background-color: #1976d2;
-  }
-  
-  /* Game Page */
-  #question {
+    margin-bottom: 30px;
+}
+
+#question {
     font-size: 26px;
     font-weight: bold;
-    margin: 25px 0 15px;
-  }
-  
-  #options {
     margin-top: 20px;
-  }
-  
-  .option {
-    display: inline-block;
+}
+
+.option {
+    padding: 15px 25px;
     margin: 10px;
-    padding: 14px 24px;
-    font-size: 20px;
-    background-color: #26a69a;
-    color: #fff;
-    border: none;
-    border-radius: 12px;
+    font-size: 18px;
     cursor: pointer;
-    transition: 0.2s;
-  }
-  
-  .option:hover {
+    background-color: #4db6ac;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
     background-color: #00897b;
-    transform: scale(1.05);
-  }
-  
-  #result {
+}
+
+#result {
+    min-height: 28px;
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
-    min-height: 40px;
-  }
-  
-  #game-info {
-    margin-top: 30px;
+}
+
+.about-link, .start-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: #64b5f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.about-link:hover, .start-button:hover {
+    background-color: #1976d2;
+}
+
+#game-info {
+    margin-top: 20px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
-  }
-  
-  #correct-counter, #wrong-counter {
+}
+
+#wrong-counter, #correct-counter {
     font-size: 20px;
     font-weight: bold;
-  }
-  
-  #correct-counter {
+}
+
+#wrong-counter {
+    color: #e53935;
+}
+
+#correct-counter {
     color: #388e3c;
-  }
-  
-  #wrong-counter {
-    color: #d32f2f;
-  }
-  
-  #restart-btn {
-    padding: 12px 25px;
+}
+
+#restart-btn {
+    margin-top: 15px;
+    padding: 10px 25px;
     font-size: 18px;
     background-color: #ff7043;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
-    margin-top: 20px;
-  }
-  
-  #restart-btn:hover {
-    background-color: #e64a19;
-  }
-  
-  img {
+    transition: background-color 0.3s;
+}
+
+#restart-btn:hover {
+    background-color: #d84315;
+}
+
+img {
     max-width: 100%;
     height: auto;
-    margin: 25px auto 0;         /* 👈 Центрируем по горизонтали */
-    display: block;              /* 👈 Принудительно блочный элемент */
+    margin: 25px auto 0;
+    display: block;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  }
-  
-  ul {
-    text-align: right;
-    font-size: 20px;
-    line-height: 1.6;
-    margin: 20px 0;
-    padding-right: 25px;
-  }
-  
+}
+
+/* 🔽 Адаптивность для мобильных телефонов */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    #question {
+        font-size: 20px;
+    }
+
+    .option {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 6px;
+    }
+
+    #restart-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    #correct-counter,
+    #wrong-counter {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 10px;
+        margin: 10px;
+    }
+}
