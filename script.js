@@ -102,8 +102,8 @@ const questions = [
         wrongCount === 0
           ? "!מעולה, אין לך טעויות"
           : wrongCount === 1
-          ? "!יפה מאוד, רק טעות אחת"
-          : "!סיימת! אבל כדאי לחזור קצת על החומר";
+          ? "!יפה מאוד רק טעות אחת"
+          : "!סיימת אבל כדאי לחזור קצת על החומר";
       optionsDiv.innerHTML = "";
       questionText.textContent = "";
       image.style.display = "none";
@@ -111,7 +111,7 @@ const questions = [
     }
   
     if (wrongCount >= 3) {
-      alert("טעית 3 פעמים! כדאי ללמוד שוב.");
+      alert("!טעית 3 פעמים כדאי ללמוד שוב.");
       restartBtn.click();
       return;
     }
