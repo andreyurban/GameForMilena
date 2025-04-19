@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="he">
 <head>
-    <meta charset="UTF-8">
-    <title>ברוכים הבאים למשחק העין!</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>משחק מבנה העין</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .start-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .start-wrapper p {
+      font-size: 20px;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .start-wrapper h1 {
+      font-size: 36px;
+      color: #00796b;
+    }
+
+    .start-btn {
+      background-color: #43a047;
+      color: white;
+      padding: 15px 30px;
+      font-size: 22px;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .start-btn:hover {
+      background-color: #2e7d32;
+    }
+  </style>
 </head>
 <body dir="rtl">
-    <div class="container">
-        <h1>ברוכים הבאים למשחק מבנה העין!</h1>
-        <p>
-            במשחק זה עליכם לענות נכון על <strong>5 שאלות</strong> בנושא העין.<br>
-            יש לכם <strong>3 אפשרויות לטעות</strong>. בהצלחה!
-        </p>
-        <a href="game.html" class="start-button">התחלת המשחק!</a>
-        <a href="about.html" class="about-link">אודות המשחק</a>
-    </div>
+  <div class="container start-wrapper">
+    <a href="about.html" class="about-link">אודות המשחק</a>
+
+    <h1>ברוכים הבאים למשחק מבנה העין!</h1>
+
+    <p>במשחק זה תצטרכו לענות נכון על <strong>5 שאלות</strong> בנושא העין.</p>
+    <p>יש לכם <strong>3 אפשרויות לטעות</strong>. בהצלחה!</p>
+
+    <a href="game.html" class="start-btn">התחלת המשחק!</a>
+  </div>
 </body>
 </html>
