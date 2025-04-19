@@ -8,14 +8,6 @@ body {
     direction: rtl;
 }
 
-/* Масштабирование на ПК */
-@media (min-width: 601px) {
-    .container {
-        transform: scale(0.75); /* 👈 уменьшаем всё на ПК */
-        transform-origin: top center;
-    }
-}
-
 /* Главный контейнер */
 .container {
     margin: 20px auto;
@@ -59,7 +51,7 @@ h1 {
     border: none;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.2s;
-    min-width: 180px;
+    min-width: 200px;
     max-width: 90%;
     white-space: nowrap;
     overflow: hidden;
@@ -166,6 +158,12 @@ ul {
         font-size: 14px;
     }
 
+    .container {
+        transform: scale(0.82); /* 👈 уменьшение только на телефоне */
+        transform-origin: top center;
+        width: 100%;
+    }
+
     h1 {
         font-size: 28px;
     }
@@ -176,7 +174,7 @@ ul {
 
     .option {
         font-size: 16px;
-        padding: 10px 20px;
+        padding: 10px 16px;
         margin: 6px;
         height: 45px;
     }
@@ -191,8 +189,7 @@ ul {
         font-size: 16px;
     }
 
-    .container {
-        padding: 10px;
-        margin: 10px;
+    .container p {
+        font-size: 18px;
     }
 }
