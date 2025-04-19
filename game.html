@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="he">
 <head>
-    <meta charset="UTF-8">
-    <title>משחק על מבנה העין</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>משחק מבנה העין</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body dir="rtl">
-    <div class="container">
-        <h1>למדו על מבנה העין!</h1>
-        <a href="about.html" class="about-link">אודות המשחק</a>
-        <img id="eye-image" src="images/eye.png" alt="עין">
-        <p id="question"></p>
-        <div id="options"></div>
-        <p id="result"></p>
-
-        <div id="game-info">
-            <p id="correct-counter">נכונות: 0 מתוך 5</p>
-            <p id="wrong-counter">טעויות: 0</p>
-            <button id="restart-btn">התחל מחדש</button>
-        </div>
+  <div class="container">
+    <a href="about.html" class="about-link">אודות המשחק</a>
+    <h1>למדו על מבנה העין!</h1>
+    <img id="eye-image" src="images/eye.png" alt="עין">
+    <p id="question">...שאלה נטענת</p>
+    <div id="options"></div>
+    <p id="result"></p>
+    <div id="game-info">
+      <span id="correct-counter">נכונות: 0 מתוך 5</span>
+      <span id="wrong-counter">טעויות: 0</span>
+      <button id="restart-btn">התחל מחדש</button>
     </div>
-    <script src="script.js"></script>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
