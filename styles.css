@@ -23,7 +23,7 @@ body {
   /* Масштаб для компьютеров */
   @media (min-width: 601px) {
     .container {
-      transform: scale(0.9);
+      transform: scale(0.75);
       transform-origin: top center;
     }
   }
@@ -31,7 +31,7 @@ body {
   /* Масштаб для телефонов */
   @media (max-width: 600px) {
     .container {
-      transform: scale(0.82);
+      transform: scale(0.75);
       transform-origin: top center;
     }
   }
