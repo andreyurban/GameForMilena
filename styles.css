@@ -51,14 +51,14 @@ h1 {
     border: none;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.2s;
-    min-width: 200px;          /* 👈 фиксируем ширину */
-    max-width: 90%;            /* 👈 адаптивно ограничиваем */
-    white-space: nowrap;       /* 👈 не переносим строки */
+    min-width: 200px;
+    max-width: 90%;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 50px;              /* 👈 фиксированная высота */
+    height: 50px;
     box-sizing: border-box;
-  }
+}
 
 .option:hover {
     background-color: #00897b;
@@ -67,7 +67,7 @@ h1 {
 
 /* Ответ — правильно или неправильно */
 #result {
-    height: 25px; /* ← фиксируем высоту блока */
+    height: 25px;
     margin-top: 20px;
     font-size: 22px;
     font-weight: bold;
@@ -118,7 +118,7 @@ h1 {
 
 /* Кнопка перезапуска */
 #restart-btn {
-    margin-top: 15px; /* Отступ от счётчиков */
+    margin-top: 15px;
     padding: 10px 25px;
     font-size: 18px;
     background-color: #ff7043;
@@ -138,7 +138,7 @@ img {
     max-width: 100%;
     height: auto;
     margin: 25px auto 0;
-    display: block; /* Центровка */
+    display: block;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
@@ -156,6 +156,15 @@ ul {
 @media (max-width: 600px) {
     body {
         font-size: 14px;
+    }
+
+    .container {
+        padding: 10px;
+        margin: 0 auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     h1 {
@@ -180,10 +189,5 @@ ul {
     #correct-counter,
     #wrong-counter {
         font-size: 16px;
-    }
-
-    .container {
-        padding: 10px;
-        margin: 10px;
     }
 }
